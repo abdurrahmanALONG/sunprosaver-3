@@ -162,7 +162,7 @@ async function run() {
               }
             }
       
-            const result = await paymentCollection.insertOne(payment);
+            // const result = await paymentCollection.insertOne(payment);
             const updatedBooking = await ordersCollection.updateOne(filter, updatedDoc);
             res.send(updatedBooking);
           })
